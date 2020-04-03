@@ -1,6 +1,9 @@
 def find_element_index(array, value_to_find)
-  if array[value_to_find] == true
-    puts array[value_to_find].to_int
+  count = 0
+  while count < array.length do
+    if array[count] == value_to_find
+      puts array[count-1]
+    count += 1
   else
     return nil
   end
